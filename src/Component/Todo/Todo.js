@@ -22,9 +22,13 @@ class Todo extends Component {
     })
   }
   handleDelete = (index) => {
-    // const allItems = this.state.items
-    // allItems.splice(index, 1)
-    this.state.items.filter((data, key) => key !== index)
+    const allItems = this.state.items
+    allItems.splice(index, 1)
+    // this.state.items.filter((data, key) => key !== index)
+    // console.log("deletefunction", this.state.items)
+    this.setState({
+      items: allItems,
+    })
   }
 
   render() {
