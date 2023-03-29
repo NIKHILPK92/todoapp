@@ -29,6 +29,7 @@ class Todo extends Component {
 
   render() {
     const { inputValue, items } = this.state
+    console.log(items)
     return (
       <div className="todo-container">
         <form className="input-section" onSubmit={this.storeItems}>
@@ -44,6 +45,7 @@ class Todo extends Component {
           {items.map((item, index) => {
             return (
               <li key={index}>
+                {item}
                 <i
                   className="fa fa-trash"
                   aria-hidden="true"
