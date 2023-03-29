@@ -1,0 +1,15 @@
+header {
+    background-color:  rgb(9, 80, 72);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header a {
+    color: rgb(17 159 140 / 72%);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
