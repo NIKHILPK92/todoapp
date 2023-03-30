@@ -1,0 +1,12 @@
+.todo-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:  rgb(9, 80, 72);
+    color: rgb(63, 104, 98);
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: small;
+    text-align: center;
+}
