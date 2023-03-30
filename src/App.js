@@ -16,9 +16,16 @@ class App extends Component {
       <Router>
         <Header />
         <Routes>
-          <Route exact path="/todoapp" component={Todo} />
-          <Route path="/todoapp/about" component={About} />
-          <Navigate exact from="/" to="/todoapp" />
+          <Route
+            path="/"
+            element={<Navigate replace to="/todoapp" />}
+            Component={Todo}
+          />
+          <Route
+            path="/about"
+            element={<Navigate replace to="/todoapp/about" />}
+            Component={About}
+          />
         </Routes>
         <Footer />
       </Router>
