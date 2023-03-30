@@ -59,6 +59,13 @@ class Todo extends Component {
             )
           })}
         </ul>
+        {items.length > 0 ? (
+          <h5 className="todo-counter">
+            You Have {items.length} {items.length === 1 ? "Task" : "Tasks"}
+          </h5>
+        ) : (
+          ""
+        )}
       </div>
     )
   }

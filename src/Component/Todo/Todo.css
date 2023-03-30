@@ -57,3 +57,7 @@ ul li i {
     flex: 1;
     cursor: pointer;
 }
+
+.todo-counter {
+    color: rgb(63, 104, 98);
+}
